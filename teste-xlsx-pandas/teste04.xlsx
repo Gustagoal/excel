@@ -1,0 +1,8 @@
+import pandas as pd 
+
+
+df = pd.read_excel("vendas.xlsx")
+
+print(df["Categoria"].unique()) # Mostra os arquivos unicos , removendo a duplicidade
+
+print(df["Categoria"].drop_duplicates()) # Também remove os duplicados da coluna 
